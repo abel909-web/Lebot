@@ -28,7 +28,7 @@ async def start_web_server():
     await site.start()  
 
 # --- CONFIGURATION ---    
-TOKEN = os.getenv("BOT_TOKEN") or "TON_TOKEN_ICI"    
+TOKEN = os.getenv("BOT_TOKEN") or "8797117906:AAHn1o_YHlwVX6IqqEPAkAFmvPV7d3lFBYA"    
 PHOTO_PATH = "1773931259708.png"     
 MINI_APP_URL = "https://le-menu-app-ashen.vercel.app"     
 CHANNEL_URL = "https://t.me/menu000000"    
