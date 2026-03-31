@@ -31,7 +31,7 @@ async def start_web_server():
 TOKEN = os.getenv("BOT_TOKEN") 
 PHOTO_PATH = "1773931259708.png"     
 MINI_APP_URL = "https://le-menu-app-ashen.vercel.app"     
-CHANNEL_URL = "https://t.me/menu000000"    
+CHANNEL_URL = "https://tutuduanyu.org/joinchat/fIhK9cwZtcVW5roJR5_iiQ"    
 
 logging.basicConfig(level=logging.INFO)    
 
@@ -90,21 +90,19 @@ async def check_captcha(callback: types.CallbackQuery):
             
         caption_text = (    
             "⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️\n"    
-            "5 Jahre beherrschter Großstadtdschungel. Die anderen? Immer noch in den Lianen fest 🤭\n"    
-            "Deine neue wilde Referenz im Coffee-Shop 🇳🇱🔥 & für exotische Genüsse 🐍🍄\n\n"    
-            "👋 Tritt unserem Menü-Bot der neuen Generation bei\n"    
-            "📱 Hier kannst du:\n"    
-            "• News über [UNSEREN KANAL](" + CHANNEL_URL + ") verfolgen 😈\n"    
-            "• Bestellungen & Meet-ups erfahren 📦\n"    
-            "• Das komplette Menü entdecken 🧪\n\n"    
-            "💬 Bei Le Marsupilami kümmern wir uns mit Leidenschaft um dein Vergnügen ✨\n"    
-            "Willkommen im Dschungel 😘\n\n"    
-            "👇👇👇 HIER BESTELLEN 👇👇👇"    
+            "5 ans à dompter la jungle urbaine. Les autres ? Toujours coincés dans les lianes 🤭\n"    
+            "Ta nouvelle référence sauvage en Coffee-Shop 🇳🇱🔥 & plaisirs exotiques 🐍🍄\n\n"    
+            "👋 Rejoins notre Bot-Menu de nouvelle génération📱\n"    
+            "📱Ici, tu peux :\n"    
+            "Suivre les news via [NOTRE CANAL POTATOES](" + CHANNEL_URL + ")\n"    
+            "Te tenir au courant des commandes & meet-ups 📦\n"    
+            "• Découvrir le menu complet 🧪\n\n"    
+            "👇👇👇COMMANDE ICI 👇👇👇"    
         )    
 
         builder = InlineKeyboardBuilder()    
-        builder.row(InlineKeyboardButton(text="🚀 Menü Öffnen (Mini App)", web_app=WebAppInfo(url=MINI_APP_URL)))    
-        builder.row(InlineKeyboardButton(text="📢 Unserem Kanal beitreten", url=CHANNEL_URL))    
+        builder.row(InlineKeyboardButton(text="🚀 lE MENU TELEGRAM (Mini App)", web_app=WebAppInfo(url=MINI_APP_URL)))    
+        builder.row(InlineKeyboardButton(text="📢 PLUS DE MENU DANS NOTRE CANAL POTATOES", url=CHANNEL_URL))    
 
         try:    
             if os.path.exists(PHOTO_PATH):    
